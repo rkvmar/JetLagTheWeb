@@ -77,7 +77,9 @@
         {/if}
 
         <button on:click={handleLogin} disabled={loading || !username.trim()}>
-            {loading ? "Logging in..." : `Continue as ${username || "Guest"}`}
+            {loading
+                ? "Logging in..."
+                : `Continue as ${username.trim() || "..."}`}
         </button>
     </div>
 </main>
