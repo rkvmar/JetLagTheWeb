@@ -19,5 +19,11 @@
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
 		"vite": "^6.0.0"
+	},
+	"dependencies": {
+		"@supabase/auth-helpers-sveltekit": "^0.13.0",
+		"@supabase/supabase-js": "^2.48.1",
+		"@types/leaflet": "^1.9.16",
+		"leaflet": "^1.9.4"
 	}
 }
