@@ -1,0 +1,21 @@
+{
+  "name": "Jet Lag: The Web App",
+  "short_name": "Jet Lag",
+  "description": "A web app for Jet Lag game",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#252e3f",
+  "theme_color": "#252e3f",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
