@@ -47,7 +47,7 @@
 </script>
 
 <main>
-    <h1>Jet Lag: The Web App</h1>
+    <h1>Jet Lag: The App</h1>
 
     <div class="login-container">
         <div class="input-group">
