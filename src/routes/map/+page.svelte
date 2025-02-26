@@ -294,6 +294,7 @@
             map.on("mousemove touchmove", updateCirclePosition);
             map.on("mouseup touchend", stopDragging);
             e.originalEvent.preventDefault();
+            e.originalEvent.stopPropagation();
         });
     }
 
