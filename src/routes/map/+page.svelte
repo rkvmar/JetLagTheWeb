@@ -289,10 +289,10 @@
             });
 
         // Make circle draggable
-        towerCircle.on("mousedown", function (e: any) {
+        towerCircle.on("mousedown touchstart", function (e: any) {
             map.dragging.disable();
-            map.on("mousemove", updateCirclePosition);
-            map.on("mouseup", stopDragging);
+            map.on("mousemove touchmove", updateCirclePosition);
+            map.on("mouseup touchend", stopDragging);
             e.originalEvent.preventDefault();
         });
     }
@@ -303,8 +303,8 @@
 
     function stopDragging() {
         map.dragging.enable();
-        map.off("mousemove", updateCirclePosition);
-        map.off("mouseup", stopDragging);
+        map.off("mousemove touchmove", updateCirclePosition);
+        map.off("mouseup touchend", stopDragging);
     }
 
     async function placeTower(lat: number, lng: number) {
